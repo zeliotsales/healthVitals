@@ -16,12 +16,12 @@ const KAFKA_OUTPUT_TOPIC = process.env.KAFKA_OUTPUT_TOPIC ;
 
 const kafka = new Kafka({
   clientId: 'vitals-producer',
-  brokers: ['my-cluster-kafka-bootstrap.kafka:9092'],
+  brokers: ['my-cluster-kafka-bootstrap.kafka.svc:9092'],
   ssl: false,
   sasl: {
     mechanism: 'scram-sha-512',
-    username: "",
-    password: ""
+    username: "my0jpefb0c6q7u8fkfeqjb0t7",
+    password: "a8438SL6T2Vx4FJTuntCtzyTV5vl56JO"
   }
 });
 
